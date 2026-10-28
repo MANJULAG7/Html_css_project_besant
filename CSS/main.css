@@ -64,8 +64,8 @@ box-sizing: border-box;
     flex-direction: column;
     justify-content: space-between;
     margin: 0;
-    padding: 25px 100px 10px;
-    border:1px solid black;
+    padding: 25px 100px 0;
+    /* border:1px solid black; */
 }
 
 
@@ -156,6 +156,9 @@ box-sizing: border-box;
     border:1px solid white;
     border-top:2px solid teal;
     box-shadow: 0 5px 10px grey;
+    position: relative;
+    z-index:9;
+    margin-top: 0;
     
 }
 #main #images .image img{
@@ -194,6 +197,7 @@ box-sizing: border-box;
    
     background: linear-gradient(45deg, white,teal);
     height: auto;
+    margin-bottom: 5px;
 }
 #section2 #abouts
 {
@@ -501,7 +505,7 @@ box-sizing: border-box;
     justify-content: center;
     align-items: center;
     padding: 40px 40px;
-    background-color: rgb(251, 242, 230);
+    background-color: rgb(223, 233, 237);
 }
 
 #section4 h1{
@@ -539,6 +543,9 @@ box-sizing: border-box;
     height:75px;
     width:150px;
 }
+/* 
+section5 */
+
 .section5
 {
     display: grid;
