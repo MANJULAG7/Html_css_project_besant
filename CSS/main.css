@@ -1,0 +1,684 @@
+*{
+top: 0;
+margin: 0;
+box-sizing: border-box;
+}
+:root{
+    --navbar-color:#191919;
+    --background-color:white;
+    --button-color:#59d809;
+    --button-color-hover: #51a31d;
+    --h1-color:white;
+
+    --text-color-primary:black;
+    --text-color-secondary:white;
+    --span-color:teal;
+}
+
+/* arrange the elements inside the titile */
+#title
+{
+    background-color: var(--navbar-color);
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    padding:5px 20px;
+}
+
+/* arrang the items of title */
+#title h1
+{
+    color:var(--h1-color);
+    font-size:25px;
+    font-weight: 100;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#title h1 span{
+    font-weight: 500;
+    font-style: oblique;
+}
+
+#title h1::before{
+    content:""
+}
+
+#title button{
+    background-color: var(--button-color);
+    padding:3px 15px;
+    border-style: none;
+    border-radius: 3px;
+}
+
+/* for remaining content wriiten inside main. so give 100% widht to the main */
+#main
+{
+    width:auto;
+    margin-top:50px;
+    /* padding: 15px 50px; */
+}
+#main #navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 25px 100px 10px;
+    border:1px solid black;
+}
+
+
+#main #navbar .navcontact
+{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    /* border:1px solid black; */
+}
+
+#main #navbar .navcontact .shape
+{
+    height: 30px;
+    width:30px;
+    border-radius: 50%;
+    border:2px solid rgb(100, 100, 236);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+#main #navbar .navcontact .image
+{
+    height: 20px;
+    width:20px;
+    border-radius: 50%;
+}
+
+#main #navbar .navcontact .shape:hover{
+    background-color: teal;
+}
+
+#main #navbar .navcontact .social{
+    display: flex;
+    gap:5px;
+
+}
+
+/* styling th main manu   */
+#main #navbar #menu
+{
+  display:flex;
+  background-color: var(--navbar-color);
+  margin-top:30px;
+  justify-content: space-between;
+  /* padding:10px; */
+  height: auto;
+  margin-bottom: 0;
+}
+#main #navbar #menu  ul
+{
+    display: flex;
+    gap:20px;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding:0 20px;
+}
+#main #navbar #menu ul li{
+    border:1px solid transparent;
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0 10px;
+}
+
+#main #navbar #menu ul li:hover
+{
+    background-color: hsl(0, 1%, 30%);
+}
+#main #navbar #menu ul li a{
+    text-decoration: none;
+    color:var(--text-color-secondary);
+}
+
+/* section1 */
+#main #images
+{
+    background: linear-gradient(45deg,var(--navbar-color),grey);
+    height:auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 40px;
+    border:1px solid white;
+    border-top:2px solid teal;
+    box-shadow: 0 5px 10px grey;
+    
+}
+#main #images .image img{
+    margin-top: 0;
+    height: 400px;
+    width: auto;
+}
+
+#main #images .content
+{
+
+     display: flex;
+     flex-direction: column;
+     gap:10px;
+}
+#main #images .content h2{
+     color:var(--text-color-secondary);
+     font-size:30px;
+}
+#main #images .content div p{
+     color:var(--text-color-secondary);
+       font-size:20px;
+}
+
+#main #images .content div{
+    /* border:1px solid n; */
+    background: grey;
+    border-radius: 2px;
+    width: fit-content;
+    padding: 0 10px;
+}
+
+/* section2 */
+#section2
+{
+   
+    background: linear-gradient(45deg, white,teal);
+    height: auto;
+}
+#section2 #abouts
+{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    "tiny right1"
+    "tiny right2"
+    "tiny right3";
+    row-gap: 35px;
+    padding-top:50px;
+    padding-bottom:40px;
+}
+
+#section2 #abouts #tiny_about
+{
+    grid-area: tiny;
+    grid-row: 1/4;
+    grid-column: 1/2;
+
+    display: flex;
+    flex-direction: column;
+    padding-left:150px;
+    padding-right: 20px;
+}
+#section2 #abouts #tiny_about h2{
+    font-size:50px;
+    font-weight: 600;
+    color: var(--text-color-primary);
+    line-height: 90%;
+}
+
+#section2 #abouts #tiny_about h2 span
+{
+    color:var(--span-color);
+}
+
+#section2 #abouts #tiny_about p{
+    font-size: 25px;
+    font-weight: 200;
+    color: var(--text-color-primary);
+}
+
+
+#section2 #abouts #tiny_about button{
+    width: fit-content;
+    padding:5px 10px;
+    border-radius: 3px;
+    background-color: rgb(3, 174, 174);
+    margin-top:60px;
+    font-size: 20px;
+    color: white;
+}
+
+#section2 #abouts .right1
+{
+    grid-area: right1;
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+#section2 #abouts .right2
+{
+    grid-area: right2;
+    grid-row: 2/3;
+    grid-column: 2/3;
+}
+
+#section2 #abouts .right3
+{
+    grid-area: right3;
+    grid-row: 3/4;
+    grid-column: 2/3;
+}
+
+#section2 #abouts .right_about
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#section2 #abouts .right_about .heading_content
+{
+    display: flex;
+    padding:0 20px;
+    align-items: center;
+    gap: 10px
+
+}
+
+#section2 #abouts .right_about .heading_content .logo
+{
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section2 #abouts .right_about .heading_content .logo img{
+    height: 50px;
+    width: 50px;
+     border-radius: 50%;
+    background-color: white;
+    background-color:teal;
+
+}
+#section2 #abouts .right_about .heading_content h2{
+    font-size:40px;
+}
+
+#section2 #abouts .right_about .heading_content h2 span{
+    font-size:25px;
+}
+
+#section2 #abouts .right_about .description
+{
+    padding-left:80px;
+    font-size: 25px;
+    padding-right:20px;
+}
+
+
+/* desiginin boxes in section2 */
+#section2 .boxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:20px;
+    padding:0 30px;
+}
+
+
+#section2 .boxes .box{
+    border:1px solid white;
+    background-color: rgb(22, 179, 179);
+    padding:15px;
+    
+}
+
+
+#section2 .boxes .box h3{
+    color: var(--text-color-secondary);
+    font-size:25px;
+    font-weight: 200;
+    display: inline-block;
+    margin-bottom:10px ;
+}
+
+#section2 .boxes .box table{
+    border-spacing: 20px;
+    
+}
+#section2 .boxes .box p{
+ color: var(--text-color-secondary);
+ font-size: 20px;
+}
+
+#section2 .boxes .box img{
+    height:100px;
+    width: 100px;
+}
+
+
+#section2 .boxes .box2
+{
+    margin-bottom: 10px;
+}
+
+/* styling section 3 */
+
+#section3 #heading
+{
+    display:flex;
+    padding:50px 70px;
+    gap:10px;
+    align-items: center;
+}
+
+
+#section3 #heading h3{
+    color:var(--text-color-primary);
+    font-size: 25px;
+    font-weight: 300;
+}
+#section3 #heading h3 span{
+    color: var(--span-color);
+}
+#section3 #heading #first
+{
+    width: 480px;
+    height: 3px;
+    border-color:white;
+    background:repeating-linear-gradient(135deg,white 0 5px,grey 5px 10px);
+
+}
+#section3 #heading #second
+{
+    width: 70px;
+    height: 3px;
+    border-color:transparent;
+    background:repeating-linear-gradient(135deg,white 0 5px,grey 5px 10px);
+}
+
+#section3 #heading p{
+    color: grey;
+    font-weight:bolder;
+}
+
+#section3 #heading .loading
+{
+    display: flex;
+    justify-content: center;
+    gap:3px;
+}
+
+#section3 #heading .loading .circle
+{
+    height:10px;
+    width:10px;
+    border-radius:50%;
+    background-color: gray;
+}
+
+#section3 #heading .loading .circle1
+{
+  animation: loading 1.8s steps(1)  infinite;
+}
+
+#section3 #heading .loading .circle2
+{
+    animation: loading 1.8s steps(1) -0.6s infinite;
+}
+
+#section3 #heading .loading .circle3
+{
+    animation: loading 1.8s steps(1) -1.2s infinite;
+}
+
+@keyframes loading{
+    0%,33.33%
+    {
+        background-color:teal;
+    }
+    33.34%,100%
+    {
+    
+        background-color:grey;
+    }
+}
+
+#section3 .journals
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:50px;
+    padding:10px 70px;
+}
+
+#section3 .journals .common
+{
+    text-align: justify;
+}
+
+#section3 .journals .common h2{
+    color: var(--span-color);
+    font-size: 20px;
+    font-weight: 200;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#section3 .journals .common span{
+    color: var(--span-color);
+}
+
+#section3 .journals .common #author
+{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+#section3 .journals .common .profile
+{
+    display: flex;
+    gap:10px;
+    align-items: center;
+    padding-top:30px;
+}
+
+#section3 .journals .common .profile img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+/* styling section4 */
+#section4
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 40px;
+    background-color: rgb(251, 242, 230);
+}
+
+#section4 h1{
+    color: var(--text-color-primary);
+    font-size:50px;
+}
+
+#section4 h2{
+    color:var(--span-color);
+    font-size: 25px;
+    font-weight: 600;
+    display: inline-block;
+    margin:15px 0 10px;
+
+}
+
+#section4 p{
+    font-size: 20px;
+    color: gray;
+}
+#section4 table{
+    margin:30px 10px 20px;
+    border:1px solid black;
+    border-collapse: collapse;
+
+}
+
+#section4 table tr,#section4 table td{
+    border:1px solid black;
+    padding: 20px 10px;
+
+}
+
+#section4 table img{
+    height:75px;
+    width:150px;
+}
+.section5
+{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-rows: 2fr;
+    grid-template-areas:
+    "above right"
+    "below right";
+    gap:10px;
+    padding:30px 80px;
+    background-color: var(--navbar-color);
+     position: relative;
+
+}
+
+.section5 .left
+{
+    margin-right: 20px;
+}
+.section5 .left .above table
+{
+    border-collapse: collapse;
+    table-layout: fixed;
+    border-bottom: 1px solid rgb(80, 76, 76);
+   
+    
+}
+
+.section5 .left .above table td{
+    padding: 20px;
+     padding-bottom: 30px;
+    /* text-align: start; */
+    vertical-align: top;
+}
+
+.section5 .left .above h2{
+    color: var(--text-color-secondary);
+    font-size: 20px;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.section5 .left .above p{
+    color: var(--text-color-secondary);
+    font-size: 15px;
+    font-weight: 100;
+    text-align: justify;
+}
+
+.section5 .left .above ul{
+    list-style-type:"▶   ";
+    
+}
+
+.section5 .left .above a{
+    text-decoration: none;
+    color: var(--text-color-secondary);
+    
+}
+
+.section5 .left .above a:hover{
+    color: grey;
+}
+
+.section5 .left .above ul li::marker{
+    color: white;
+}
+
+.section5 .left .below .logo
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    /* border: 1px solid wheat; */
+}
+
+.section5 .left .below .logo .items
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.section5 .left .below img{
+    height: 75px;
+    width: auto;
+}
+
+.section5 .left .below .some{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.section5 .left .below p
+{
+    display: inline-block;
+    color: var(--text-color-secondary);
+    font-size: 15px;
+}
+.section5 .left .below p:hover
+{
+    color: gray;
+}
+
+.section5 .right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 30px;
+    background-color: #2e2d2d;
+   
+}
+
+.section5 .right img{
+    height: 70px;
+    width: auto;
+}
+
+.section5 .right p{
+    color: var(--text-color-secondary);
+    font-size: 15px;
+}
+
+.section5 .right button
+{
+    background-color: teal;
+    color: var(--text-color-secondary);
+    padding:10px 20px;
+    margin-top: 20px;
+    border-radius:5px;
+}
+.section5 .touch
+{
+    position: absolute;
+    background-color: teal;
+    padding: 10px 20px;
+    font-size: 15px;
+    color: var(--text-color-secondary);
+    top:-20px;
+    right:70px
+}
