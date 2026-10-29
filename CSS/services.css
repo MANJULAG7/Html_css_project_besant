@@ -81,3 +81,38 @@
     color: gray;
     padding-left:80px ;
 }
+
+
+/* stylling section contianer */
+.serviceContianers
+{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-between;
+    padding: 20px 120px;
+    gap:20px;
+}
+.serviceContianers .con{
+    border: 1px solid transparent;
+    padding: 10px 15px 40px;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(238, 234, 234);
+    margin:10px 0 30px;
+
+}
+
+.serviceContianers .con img{
+    width: fit-content;
+}
+.serviceContianers .con h2{
+    font-size:30px;
+    font-weight: 600px;
+}
+
+.serviceContianers .con p{
+    color: grey;
+}
