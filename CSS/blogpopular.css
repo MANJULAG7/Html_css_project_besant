@@ -1,0 +1,37 @@
+*
+{
+    top: 0;
+    margin: 0;
+    padding: 0;
+}
+.blogpopular
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.blogpopular .above
+{
+    display: flex;
+    gap:10px;
+    margin-bottom: 10px;
+}
+.blogpopular .above img{
+    width: 30%;
+}
+.blogpopular .above h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: teal;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.blogpopular .above p 
+{
+    color: grey;
+}
+.blogpopular .above p span{
+    color:teal
+}
+

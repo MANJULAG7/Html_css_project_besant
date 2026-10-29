@@ -285,7 +285,8 @@
     color: teal;
     line-height: 30px;
 }
-:root{
+
+/* :root{
     --navbar-color:#191919;
     --background-color:white;
     --button-color:#59d809;
@@ -295,4 +296,4 @@
     --text-color-primary:black;
     --text-color-secondary:white;
     --span-color:teal;
-}
+} */

@@ -1,0 +1,19 @@
+*
+{
+    top: 0;
+    margin: 0;
+    padding: 0;
+}
+.contact
+{
+    color:grey;
+    padding: 0 20px;
+}
+.contact ul{
+    list-style-type:"▶   ";
+    margin-top: 10px;
+} 
+.contact ul li::marker
+{
+ color: gray;   
+}
