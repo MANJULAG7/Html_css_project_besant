@@ -1,0 +1,126 @@
+.contactSection1 
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:20px;
+    padding: 30px 100px;
+}
+.contactSection1 .left 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 20px 30px 20px;
+    gap:20px;
+}
+
+.contactSection1 .left form
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.contactSection1 .left form input, 
+.contactSection1 .left form select,
+.contactSection1 .left form textarea
+{
+    padding: 5px 15px;
+    font-size: 15px;
+    border:1px solid gray;
+}
+
+.contactSection1 .left form input:hover, 
+.contactSection1 .left form select:hover,
+.contactSection1 .left form textarea:hover
+{
+    border-color: teal;
+}
+.contactSection1 .left form input:focus, 
+.contactSection1 .left form select:focus,
+.contactSection1 .left form textarea:focus
+{
+    border:2px solid aqua;
+    outline: none;
+}
+
+.contactSection1 .left form textarea
+{
+    height: 100px;
+}
+
+.contactSection1 .left form button
+{
+    padding: 10px 20px;
+    background-color: #191919;
+    color: white;
+    border-radius: 5px;
+    width: fit-content;
+    margin: 20px 0 30px;
+    border: transparent;
+    transition: background-color 1s ease-in;
+}
+
+.contactSection1 .left form button:hover
+{
+    background-color: teal;
+}
+
+.contactSection1 .right .heading
+{
+    display: flex;
+    gap:20px;
+    align-items: center;
+}
+.contactSection1 .right .heading h2{
+    color: grey;
+}
+
+.contactSection1 .right .heading h2 span{
+    color:teal
+}
+
+.contactSection1 .right .heading hr{
+    border:transparent;
+    height: 2px;
+    background: repeating-linear-gradient(45deg, rgb(200, 198, 198) 0 3px, white 4px 6px);
+    flex-grow: 1;
+}
+.contactSection1 .right .addresses
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin:20px 0 20px ;
+}
+
+.contactSection1 .right .addresses .address h2
+{
+    font-size: 20px;
+    font-weight:500;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.contactSection1 .right .addresses .address ,
+.contactSection1 .right .info p:hover
+ p{
+    color: gray;
+}
+.contactSection1 .right .info p
+{
+    color:teal;
+}
+
+.contactSection1 .right .info,.contactSection1 .right .time
+{
+    margin: 20px 0 30px;
+}
+
+.contactSection1 .right .time p
+{
+    color: rgb(97, 95, 95);
+    font-weight: 700;
+}
+.contactSection1 .right .time p span
+{
+    color: grey;
+    font-weight: 200;
+}
