@@ -99,6 +99,7 @@
     flex-direction: column;
     gap:20px;
     justify-content: center;
+    align-items: center;
     text-align: center;
     background-color: rgb(238, 234, 234);
     margin:10px 0 30px;
@@ -106,7 +107,8 @@
 }
 
 .serviceContianers .con img{
-    width: fit-content;
+    max-width: 30%;
+    height: auto;
 }
 .serviceContianers .con h2{
     font-size:30px;
@@ -115,4 +117,27 @@
 
 .serviceContianers .con p{
     color: grey;
+}
+
+@media screen and (max-width:487px) {
+    .serviceSection2 .above
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .serviceSection2 .right
+    {
+        margin-top: 20px;
+    }
+    .serviceContianers,
+    .serviceContianers  .con
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+     
 }

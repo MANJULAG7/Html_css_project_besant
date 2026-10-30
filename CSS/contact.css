@@ -124,3 +124,27 @@
     color: grey;
     font-weight: 200;
 }
+
+@media screen and (max-width:487px){
+    .contactSection1,
+    .contactSection1 .right .heading,
+    .contactSection1 .right .addresses
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    .contactSection1 .right .heading
+    {
+        align-items: start;
+        margin: 0;
+        padding: 0;
+        /* border: 1px solid black; */
+    }
+    
+    .contactSection1 .right .heading hr{
+        display: none;
+    }
+    
+}

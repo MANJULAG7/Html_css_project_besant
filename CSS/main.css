@@ -844,7 +844,9 @@ section5 */
         display: flex;
         flex-direction: column;
        }
-
-        
+       .section5 .touch
+       {
+        display: none;
+       }
 
 }
