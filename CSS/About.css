@@ -1,3 +1,7 @@
+#main #navbar #menu #menu-toggle,
+#main #navbar #menu .menu-btn {
+    display: none;
+}
 #aboutSecion1
 {
     display: flex;
@@ -298,6 +302,76 @@
 }
 
 @media screen and (max-width:769px) {
+    
+         #main #navbar #menu {
+        flex-direction: column;   /* button on top, list below */
+        padding: 30px;
+    }
+
+    /* the "Menu" bar */
+    #main #navbar #menu .menu-btn {
+        display: block;
+        position: relative;
+        background: #222;
+        color: #fff;
+        padding: 18px 30px;
+        font-size: 20px;
+        cursor: pointer;
+        z-index: 8;
+    }
+
+    /* chevron arrow */
+    #main #navbar #menu .menu-btn::after {
+        content: "";
+        position: absolute;
+        right: 24px;
+        top: 50%;
+        width: 9px;
+        height: 9px;
+        border-right: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        transform: translateY(-70%) rotate(45deg);
+        transition: transform .2s;
+        z-index: 8;
+    }
+
+    /* hide the links by default */
+    #main #navbar #menu .left {
+        display: none;
+        background: #222;
+    }
+
+    /* stack the links vertically */
+    #main #navbar #menu ul {
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+        margin: 0;
+        align-items: stretch;
+    }
+
+    #main #navbar #menu ul li {
+        height: auto;
+        padding: 0;
+        justify-content: flex-start;
+        border-top: 1px solid #333;
+    }
+
+    #main #navbar #menu ul li a {
+        display: block;
+        width: 100%;
+        padding: 15px 30px;
+    }
+
+    /* open state */
+    #main #navbar #menu #menu-toggle:checked ~ .left {
+        display: block;
+    }
+
+    #main #navbar #menu #menu-toggle:checked + .menu-btn::after {
+        transform: translateY(-30%) rotate(-135deg);
+    }
+      
     #aboutSecion1
     {
         flex-direction: column;
