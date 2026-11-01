@@ -118,6 +118,7 @@ box-sizing: border-box;
   height: auto;
   margin-bottom: 0;
 }
+
 #main #navbar #menu  ul
 {
     display: flex;
@@ -252,6 +253,12 @@ box-sizing: border-box;
     margin-top:60px;
     font-size: 20px;
     color: white;
+    border:transparent;
+    transition: background-color 1s ease-in;
+}
+
+#section2 #abouts #tiny_about button:hover{
+background-color: #191919;
 }
 
 #section2 #abouts .right1
@@ -709,7 +716,7 @@ section5 */
 
 .section5 .right img{
     height: auto;
-    width: 70%;
+    width: 150px;
 }
 
 .section5 .right p{
@@ -736,7 +743,7 @@ section5 */
     right:70px
 }
 
-@media screen and (max-width:487px)
+@media screen and (max-width:769px)
 {
         #title
         {
@@ -751,6 +758,13 @@ section5 */
         {
             display: none;
         }
+         #main #navbar .navcontact
+         {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* border: 1px solid black; */
+         }
 
         #main #navbar #menu
         {
@@ -763,18 +777,24 @@ section5 */
             gap: 5px;
         } 
           
-        #main #images .image img
+       #main #images
         {
-            height: 400px;
-            max-width: 100%;
-            object-fit: contain;
+            
+            display:grid;
+            grid-template-columns: 1fr 1fr;
+            padding:10px 10px;
+            
+        }
+        #main #images .image img{
+            margin-top: 0;
+            height: auto;
+            width: 100%;
         }
         #main #images .content h2{
-            
-            font-size:20px;
+            font-size:15px;
         }
         #main #images .content div p{
-           
+            color:var(--text-color-secondary);
             font-size:10px;
         }
         
@@ -848,5 +868,24 @@ section5 */
        {
         display: none;
        }
+       
+        #section2 #abouts #tiny_about h2,
+        #section2 #abouts .right_about .heading_content h2
+        {
+        font-size:35px;
+        font-weight: 500;
+        }
+
+        #section2 #abouts #tiny_about p,
+        #section2 #abouts .right_about .description,
+        #section2 .boxes .box h3
+         {
+            font-size: 20px;
+            font-weight: 200;
+        }
+        #section2 .boxes .box p{
+        font-size: 15px;
+        }
+
 
 }

@@ -206,14 +206,14 @@
 }
 
 
-/* #aboutSection4 img{
+#aboutSection4 img{
     height:auto;
     max-width:80%;
-} */
- #aboutSection4 img{
+}
+ /* #aboutSection4 img{
     height:400px;
     width:400px;
-}
+} */
 
 /* section5 styling */
 
@@ -297,7 +297,7 @@
     line-height: 30px;
 }
 
-@media screen and (max-width:487px) {
+@media screen and (max-width:769px) {
     #aboutSecion1
     {
         flex-direction: column;
@@ -358,6 +358,4 @@
     width:80%;
     }
 
-
- 
 }

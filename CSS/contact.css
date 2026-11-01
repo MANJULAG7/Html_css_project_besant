@@ -125,7 +125,7 @@
     font-weight: 200;
 }
 
-@media screen and (max-width:487px){
+@media screen and (max-width:769px){
     .contactSection1,
     .contactSection1 .right .heading,
     .contactSection1 .right .addresses

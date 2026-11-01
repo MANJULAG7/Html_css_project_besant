@@ -213,7 +213,7 @@ color: gray;
     rotate: calc(45deg);
 }
 
-@media screen and (max-width:487px) {
+@media screen and (max-width:769px) {
 
     #blogSecion1
     {

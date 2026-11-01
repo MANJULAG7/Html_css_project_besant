@@ -119,7 +119,7 @@
     color: grey;
 }
 
-@media screen and (max-width:487px) {
+@media screen and (max-width:769px) {
     .serviceSection2 .above
     {
         display: flex;
@@ -133,6 +133,7 @@
     .serviceContianers,
     .serviceContianers  .con
     {
+        width: 100%;
         display: flex;
         flex-direction: column;
         padding: 20px;
